@@ -454,141 +454,143 @@ footer{
 
 @media(max-width: 600px){
 
-    /* HEADER */
+    body{
+        overflow-x: hidden;
+    }
+
     header{
         padding: 10px 12px;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo-container{
+        justify-content: center;
+        text-align: center;
     }
 
     .logo-container img{
-        width: 45px;
-        height: 45px;
+        width: 55px;
+        height: 55px;
     }
 
     .logo-container h1{
-        font-size: 12px;
+        font-size: 15px;
+        line-height: 1.1;
     }
 
     nav ul{
-        gap: 5px;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
     }
 
     nav ul li a{
-        padding: 6px 10px;
-        font-size: 11px;
+        font-size: 12px;
+        padding: 7px 12px;
     }
 
-    /* HERO */
     .hero{
-        min-height: 65vh;
+        min-height: 70vh;
         padding: 70px 20px;
+        text-align: center;
+        justify-content: center;
     }
 
     .hero-content h2{
-        font-size: 32px;
+        font-size: 34px;
     }
 
     .hero-content p{
-        font-size: 14px;
+        font-size: 15px;
+        line-height: 1.6;
+    }
+
+    .hero-button{
+        justify-content: center;
     }
 
     .btn-primary,
     .btn-secondary{
-        padding: 10px 16px;
-        font-size: 12px;
+        padding: 11px 18px;
+        font-size: 13px;
     }
 
-    /* TENTANG */
     .tentang{
-        padding: 50px 15px;
-        gap: 15px;
+        flex-direction: column;
+        padding: 60px 20px;
+        gap: 30px;
+        text-align: left;
+    }
+
+    .tentang-text,
+    .tentang-image{
+        width: 100%;
     }
 
     .tentang-text h2{
-        font-size: 24px;
+        font-size: 32px;
     }
 
     .tentang-text p{
-        font-size: 12px;
+        font-size: 15px;
+        line-height: 1.7;
     }
 
     .slider{
-        height: 220px;
+        width: 100%;
+        height: 260px;
     }
 
-    /* PRODUK */
     .produk{
         padding: 60px 15px;
     }
 
-    .produk h2{
-        font-size: 28px;
-    }
-
-    .produk-subtitle{
-        font-size: 13px;
-    }
-
-    /* PRODUK 3 KOLOM */
     .kategori-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
-    .kategori-card{
-        border-radius: 14px;
-    }
-
     .kategori-card img{
-        height: 95px;
+        height: 90px;
     }
 
     .kategori-card-content{
-        padding: 10px;
+        padding: 9px;
     }
 
     .kategori-card h3{
         font-size: 12px;
-        margin-bottom: 5px;
     }
 
     .kategori-card p{
-        font-size: 10px;
-        line-height: 1.4;
-        margin-bottom: 10px;
+        display: none;
     }
 
     .kategori-card span{
-        padding: 6px 10px;
         font-size: 10px;
+        padding: 6px 8px;
     }
 
-    /* INFO */
     .info-kami{
         padding: 60px 15px;
     }
 
-    .info-kami h2{
-        font-size: 28px;
-    }
-
     .maps-container iframe{
-        height: 260px;
+        height: 280px;
     }
 
-    /* SOSIAL */
     .social-container{
         grid-template-columns: repeat(3, 1fr);
         gap: 10px;
     }
 
     .social-card{
-        padding: 18px 10px;
-        border-radius: 16px;
+        padding: 18px 8px;
     }
 
     .social-card i{
         font-size: 28px;
-        margin-bottom: 10px;
     }
 
     .social-card h3{
@@ -596,104 +598,14 @@ footer{
     }
 
     .social-card p{
-        font-size: 10px;
+        display: none;
     }
 
-    /* SIDEBAR */
     .sidebar-contact a{
         width: 42px;
         height: 42px;
         font-size: 18px;
     }
-
-    /* FOOTER */
-    footer{
-        padding: 18px;
-        font-size: 11px;
-    }
-}
-/* HALAMAN DETAIL PRODUK */
-.produk-page-header{
-    padding: 90px 50px;
-    text-align: center;
-
-    background: linear-gradient(135deg, #c40000, #7a0000);
-    color: white;
-}
-
-.produk-page-header h1{
-    font-size: 46px;
-    margin-bottom: 15px;
-}
-
-.produk-page-header p{
-    font-size: 18px;
-    margin-bottom: 30px;
-}
-
-.btn-kembali{
-    display: inline-block;
-    padding: 12px 28px;
-
-    background: white;
-    color: #c40000;
-
-    text-decoration: none;
-    font-weight: bold;
-
-    border-radius: 30px;
-    transition: 0.3s;
-}
-
-.btn-kembali:hover{
-    background: #f1f1f1;
-    transform: translateY(-3px);
-}
-
-/* LIST PRODUK */
-.produk-list{
-    padding: 80px 50px;
-
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 28px;
-
-    background: #fff5f5;
-}
-
-.produk-detail-card{
-    background: white;
-    border-radius: 22px;
-    overflow: hidden;
-
-    box-shadow: 0 10px 30px rgba(0,0,0,0.12);
-    transition: 0.3s ease;
-}
-
-.produk-detail-card:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(196,0,0,0.20);
-}
-
-.produk-detail-card img{
-    width: 100%;
-    height: 260px;
-    object-fit: cover;
-}
-
-.produk-detail-content{
-    padding: 25px;
-}
-
-.produk-detail-content h3{
-    font-size: 23px;
-    color: #c40000;
-    margin-bottom: 12px;
-}
-
-.produk-detail-content p{
-    color: #555;
-    line-height: 1.6;
 }
 
 /* RESPONSIVE DETAIL PRODUK */

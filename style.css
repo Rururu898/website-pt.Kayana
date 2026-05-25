@@ -452,67 +452,164 @@ footer{
     font-size: 15px;
 }
 
-/* RESPONSIVE */
-@media(max-width: 900px){
-    header{
-        flex-direction: column;
-        gap: 15px;
-        padding: 15px 20px;
-    }
-
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero{
-        padding: 90px 25px;
-    }
-
-    .hero-content h2{
-        font-size: 42px;
-    }
-
-    .tentang{
-        flex-direction: column;
-        padding: 70px 25px;
-    }
-
-    .kategori-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .social-container{
-        grid-template-columns: 1fr;
-    }
-}
-
 @media(max-width: 600px){
-    .logo-container h1{
-        font-size: 18px;
+
+    /* HEADER */
+    header{
+        padding: 10px 12px;
     }
 
     .logo-container img{
-        width: 65px;
-        height: 65px;
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-container h1{
+        font-size: 12px;
+    }
+
+    nav ul{
+        gap: 5px;
+    }
+
+    nav ul li a{
+        padding: 6px 10px;
+        font-size: 11px;
+    }
+
+    /* HERO */
+    .hero{
+        min-height: 65vh;
+        padding: 70px 20px;
     }
 
     .hero-content h2{
-        font-size: 34px;
+        font-size: 32px;
     }
 
+    .hero-content p{
+        font-size: 14px;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    /* TENTANG */
+    .tentang{
+        padding: 50px 15px;
+        gap: 15px;
+    }
+
+    .tentang-text h2{
+        font-size: 24px;
+    }
+
+    .tentang-text p{
+        font-size: 12px;
+    }
+
+    .slider{
+        height: 220px;
+    }
+
+    /* PRODUK */
+    .produk{
+        padding: 60px 15px;
+    }
+
+    .produk h2{
+        font-size: 28px;
+    }
+
+    .produk-subtitle{
+        font-size: 13px;
+    }
+
+    /* PRODUK 3 KOLOM */
     .kategori-container{
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .kategori-card{
+        border-radius: 14px;
+    }
+
+    .kategori-card img{
+        height: 95px;
+    }
+
+    .kategori-card-content{
+        padding: 10px;
+    }
+
+    .kategori-card h3{
+        font-size: 12px;
+        margin-bottom: 5px;
+    }
+
+    .kategori-card p{
+        font-size: 10px;
+        line-height: 1.4;
+        margin-bottom: 10px;
+    }
+
+    .kategori-card span{
+        padding: 6px 10px;
+        font-size: 10px;
+    }
+
+    /* INFO */
+    .info-kami{
+        padding: 60px 15px;
+    }
+
+    .info-kami h2{
+        font-size: 28px;
     }
 
     .maps-container iframe{
-        height: 330px;
+        height: 260px;
     }
 
+    /* SOSIAL */
+    .social-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
+    .social-card{
+        padding: 18px 10px;
+        border-radius: 16px;
+    }
+
+    .social-card i{
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .social-card h3{
+        font-size: 13px;
+    }
+
+    .social-card p{
+        font-size: 10px;
+    }
+
+    /* SIDEBAR */
     .sidebar-contact a{
-        width: 52px;
-        height: 52px;
-        font-size: 24px;
+        width: 42px;
+        height: 42px;
+        font-size: 18px;
+    }
+
+    /* FOOTER */
+    footer{
+        padding: 18px;
+        font-size: 11px;
     }
 }
 /* HALAMAN DETAIL PRODUK */
@@ -616,58 +713,6 @@ footer{
         font-size: 34px;
     }
 }
-/* =========================
-   RESPONSIVE TABLET
-========================= */
-@media(max-width: 900px){
-
-    header{
-        padding: 15px 25px;
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    nav ul{
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
-    .hero{
-        padding: 100px 25px;
-        text-align: center;
-        justify-content: center;
-    }
-
-    .hero-content{
-        max-width: 100%;
-    }
-
-    .hero-content h2{
-        font-size: 42px;
-    }
-
-    .hero-button{
-        justify-content: center;
-    }
-
-    .tentang{
-        flex-direction: column;
-        padding: 70px 25px;
-    }
-
-    .kategori-container{
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .social-container{
-        grid-template-columns: 1fr;
-    }
-
-    .maps-container iframe{
-        height: 350px;
-    }
-}
-
 @media(max-width: 600px){
 
     header{

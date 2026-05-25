@@ -599,3 +599,71 @@ footer{
         font-size: 18px;
     }
 }
+@media(max-width: 600px){
+
+    /* TENTANG KAMI HP */
+    .tentang{
+        display: block;
+        padding: 55px 18px;
+        background: #ffffff;
+    }
+
+    .tentang-text{
+        width: 100%;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .tentang-text h2{
+        font-size: 30px;
+        margin-bottom: 18px;
+    }
+
+    .tentang-text p{
+        font-size: 15px;
+        line-height: 1.8;
+        text-align: justify;
+        margin-bottom: 14px;
+    }
+
+    .tentang-image{
+        width: 100%;
+    }
+
+    .slider{
+        width: 100%;
+        height: 240px;
+        border-radius: 18px;
+    }
+
+    .prev,
+    .next{
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    /* SIDEBAR HP */
+    .sidebar-contact{
+        right: 8px;
+        top: auto;
+        bottom: 20px;
+        transform: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .sidebar-contact a{
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
+        border-radius: 50%;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+    }
+
+    .sidebar-contact a:hover{
+        width: 45px;
+    }
+}

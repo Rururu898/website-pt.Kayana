@@ -1,4 +1,6 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 *{
     margin: 0;
     padding: 0;
@@ -13,9 +15,12 @@ body{
     font-family: Arial, sans-serif;
     background: #f5f5f5;
     color: #222;
+    overflow-x: hidden;
 }
 
-/* HEADER */
+/* =========================
+   HEADER
+========================= */
 header{
     width: 100%;
     padding: 12px 50px;
@@ -25,11 +30,11 @@ header{
     justify-content: space-between;
     align-items: center;
 
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-
     position: sticky;
     top: 0;
     z-index: 1000;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
 }
 
 .logo-container{
@@ -47,10 +52,12 @@ header{
 .logo-container h1{
     font-family: "Times New Roman", Times, serif;
     font-size: 24px;
-    color: #000;
+    line-height: 1.1;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 nav ul{
     display: flex;
     list-style: none;
@@ -74,17 +81,23 @@ nav ul li a:hover{
     color: white;
 }
 
-/* HERO */
+/* =========================
+   HERO
+========================= */
 .hero{
     min-height: 90vh;
+
     padding: 120px 50px;
 
     display: flex;
     align-items: center;
 
     background:
-        linear-gradient(rgba(180,0,0,0.72), rgba(120,0,0,0.72)),
-        url("foto_slide1.jpeg");
+    linear-gradient(
+        rgba(180,0,0,0.72),
+        rgba(120,0,0,0.72)
+    ),
+    url("foto_slide1.jpeg");
 
     background-size: cover;
     background-position: center;
@@ -97,11 +110,14 @@ nav ul li a:hover{
 
 .hero-badge{
     display: inline-block;
+
     padding: 10px 22px;
     margin-bottom: 20px;
 
     background: rgba(255,255,255,0.18);
+
     border: 1px solid rgba(255,255,255,0.35);
+
     border-radius: 30px;
 
     font-weight: bold;
@@ -110,12 +126,14 @@ nav ul li a:hover{
 .hero-content h2{
     font-size: 58px;
     line-height: 1.1;
+
     margin-bottom: 22px;
 }
 
 .hero-content p{
     font-size: 18px;
     line-height: 1.8;
+
     margin-bottom: 35px;
 }
 
@@ -128,6 +146,7 @@ nav ul li a:hover{
 .btn-primary,
 .btn-secondary{
     padding: 14px 30px;
+
     border-radius: 30px;
 
     text-decoration: none;
@@ -143,8 +162,8 @@ nav ul li a:hover{
 
 .btn-secondary{
     background: transparent;
-    color: white;
     border: 2px solid white;
+    color: white;
 }
 
 .btn-primary:hover,
@@ -157,32 +176,45 @@ nav ul li a:hover{
     color: #c40000;
 }
 
-/* SIDEBAR */
+/* =========================
+   SIDEBAR
+========================= */
 .sidebar-contact{
     position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
+
+    right: 15px;
+    bottom: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+
     z-index: 999;
 }
 
 .sidebar-contact a{
+    width: 55px;
+    height: 55px;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
-    width: 62px;
-    height: 62px;
-
     color: white;
     text-decoration: none;
-    font-size: 28px;
+
+    font-size: 24px;
+
+    border-radius: 50%;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.25);
 
     transition: 0.3s ease;
 }
 
 .sidebar-contact a:hover{
-    width: 78px;
+    transform: scale(1.08);
 }
 
 .whatsapp{
@@ -193,21 +225,17 @@ nav ul li a:hover{
     background: #ff3d00;
 }
 
-.tiktok{
-    background: linear-gradient(135deg, #111, #000);
-}
-
-.instagram{
-    background: linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7);
-}
-
-/* TENTANG */
+/* =========================
+   TENTANG
+========================= */
 .tentang{
     display: flex;
     align-items: center;
+
     gap: 50px;
 
     padding: 90px 50px;
+
     background: white;
 }
 
@@ -218,13 +246,15 @@ nav ul li a:hover{
 .tentang-text h2{
     font-size: 40px;
     color: #c40000;
+
     margin-bottom: 20px;
 }
 
 .tentang-text p{
     font-size: 17px;
+    line-height: 1.8;
     color: #444;
-    line-height: 1.7;
+
     margin-bottom: 15px;
 }
 
@@ -232,13 +262,17 @@ nav ul li a:hover{
     flex: 1;
 }
 
-/* SLIDER */
+/* =========================
+   SLIDER
+========================= */
 .slider{
     width: 100%;
     height: 360px;
 
     overflow: hidden;
+
     border-radius: 22px;
+
     position: relative;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.18);
@@ -246,13 +280,16 @@ nav ul li a:hover{
 
 .slides{
     display: flex;
+
     height: 100%;
+
     transition: transform 1s ease;
 }
 
 .slide{
     min-width: 100%;
     height: 100%;
+
     object-fit: cover;
 }
 
@@ -260,6 +297,7 @@ nav ul li a:hover{
 .next{
     position: absolute;
     top: 50%;
+
     transform: translateY(-50%);
 
     width: 45px;
@@ -269,12 +307,12 @@ nav ul li a:hover{
     border-radius: 50%;
 
     background: rgba(0,0,0,0.55);
+
     color: white;
 
     font-size: 22px;
-    cursor: pointer;
 
-    transition: 0.3s ease;
+    cursor: pointer;
 }
 
 .prev{
@@ -285,56 +323,66 @@ nav ul li a:hover{
     right: 15px;
 }
 
-.prev:hover,
-.next:hover{
-    background: #c40000;
-}
-
-/* PRODUK */
+/* =========================
+   PRODUK
+========================= */
 .produk{
     padding: 90px 50px;
-    background: linear-gradient(180deg, #fff5f5, #ffffff);
+
+    background:
+    linear-gradient(
+        180deg,
+        #fff5f5,
+        #ffffff
+    );
+
     text-align: center;
 }
 
 .produk h2{
     font-size: 40px;
     color: #c40000;
+
     margin-bottom: 10px;
 }
 
 .produk-subtitle{
     color: #666;
-    font-size: 17px;
     margin-bottom: 45px;
 }
 
 .kategori-container{
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 28px;
 }
 
 .kategori-card{
     background: white;
+
     border-radius: 22px;
+
     overflow: hidden;
 
     text-decoration: none;
+
     color: #222;
 
     box-shadow: 0 10px 30px rgba(0,0,0,0.10);
+
     transition: 0.3s ease;
 }
 
 .kategori-card:hover{
     transform: translateY(-10px);
-    box-shadow: 0 15px 40px rgba(196,0,0,0.20);
 }
 
 .kategori-card img{
     width: 100%;
     height: 230px;
+
     object-fit: cover;
 }
 
@@ -345,53 +393,70 @@ nav ul li a:hover{
 .kategori-card h3{
     font-size: 24px;
     color: #c40000;
+
     margin-bottom: 10px;
 }
 
 .kategori-card p{
     color: #555;
     line-height: 1.6;
+
     margin-bottom: 20px;
 }
 
 .kategori-card span{
     display: inline-block;
+
     padding: 10px 22px;
 
     background: #c40000;
     color: white;
 
     border-radius: 30px;
+
     font-weight: bold;
 }
 
-/* INFO KAMI */
+/* =========================
+   INFO KAMI
+========================= */
 .info-kami{
     padding: 100px 60px;
-    background: linear-gradient(135deg, #fffafa, #fff0f0);
+
+    background:
+    linear-gradient(
+        135deg,
+        #fffafa,
+        #fff0f0
+    );
+
     text-align: center;
 }
 
 .info-kami h2{
     font-size: 44px;
     color: #b80000;
+
     margin-bottom: 12px;
 }
 
 .info-subtitle{
     color: #666;
-    font-size: 18px;
+
     margin-bottom: 45px;
 }
 
 .maps-container{
     max-width: 1100px;
+
     margin: 0 auto 55px;
 
     overflow: hidden;
+
     border-radius: 28px;
 
     background: white;
+
     padding: 12px;
 
     box-shadow: 0 18px 45px rgba(0,0,0,0.16);
@@ -400,67 +465,128 @@ nav ul li a:hover{
 .maps-container iframe{
     width: 100%;
     height: 460px;
-    display: block;
+
     border-radius: 20px;
+
+    display: block;
 }
 
 .social-container{
     max-width: 950px;
+
     margin: auto;
 
     display: grid;
+
     grid-template-columns: repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .social-card{
     padding: 38px 25px;
+
     border-radius: 24px;
 
     color: white;
+
     text-decoration: none;
 
     box-shadow: 0 12px 30px rgba(0,0,0,0.16);
+
     transition: 0.3s ease;
 }
 
 .social-card:hover{
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-10px);
 }
 
 .social-card i{
     font-size: 58px;
+
     margin-bottom: 18px;
 }
 
 .social-card h3{
     font-size: 25px;
+
     margin-bottom: 8px;
 }
 
 .social-card p{
-    font-size: 16px;
     opacity: 0.95;
 }
 
-/* FOOTER */
-footer{
-    padding: 25px 20px;
-    background: #1f1f1f;
-    color: white;
-    text-align: center;
-    font-size: 15px;
+.tiktok{
+    background: linear-gradient(135deg, #111, #000);
 }
 
-@media(max-width: 600px){
+.instagram{
+    background: linear-gradient(
+        135deg,
+        #f9ce34,
+        #ee2a7b,
+        #6228d7
+    );
+}
 
-    body{
-        overflow-x: hidden;
-    }
+/* =========================
+   FOOTER
+========================= */
+footer{
+    padding: 25px 20px;
+
+    background: #1f1f1f;
+
+    color: white;
+
+    text-align: center;
+}
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media(max-width: 900px){
 
     header{
-        padding: 10px 12px;
         flex-direction: column;
+        gap: 15px;
+
+        padding: 15px 20px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero{
+        padding: 90px 25px;
+    }
+
+    .hero-content h2{
+        font-size: 44px;
+    }
+
+    .tentang{
+        flex-direction: column;
+    }
+
+    .kategori-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media(max-width: 600px){
+
+    header{
+        padding: 12px 15px;
+
+        flex-direction: column;
+
         gap: 10px;
     }
 
@@ -475,63 +601,73 @@ footer{
     }
 
     .logo-container h1{
-        font-size: 15px;
-        line-height: 1.1;
+        font-size: 16px;
     }
 
     nav ul{
         justify-content: center;
+
         flex-wrap: wrap;
+
         gap: 6px;
     }
 
     nav ul li a{
         font-size: 12px;
+
         padding: 7px 12px;
     }
 
     .hero{
         min-height: 70vh;
-        padding: 70px 20px;
+
+        padding: 80px 20px;
+
         text-align: center;
+
         justify-content: center;
     }
 
     .hero-content h2{
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .hero-content p{
         font-size: 15px;
-        line-height: 1.6;
     }
 
     .hero-button{
         justify-content: center;
     }
 
-    .tentang{
-        flex-direction: column;
-        padding: 60px 20px;
-        gap: 30px;
+    .btn-primary,
+    .btn-secondary{
+        padding: 12px 18px;
+        font-size: 13px;
     }
 
-    .tentang-text,
-    .tentang-image{
-        width: 100%;
+    .tentang{
+        display: block;
+
+        padding: 60px 20px;
+    }
+
+    .tentang-text{
+        margin-bottom: 30px;
+        text-align: center;
     }
 
     .tentang-text h2{
-        font-size: 32px;
+        font-size: 30px;
     }
 
     .tentang-text p{
         font-size: 15px;
-        line-height: 1.7;
+        text-align: justify;
     }
 
     .slider{
-        height: 260px;
+        height: 240px;
     }
 
     .produk{
@@ -540,15 +676,16 @@ footer{
 
     .kategori-container{
         grid-template-columns: repeat(3, 1fr);
+
         gap: 10px;
     }
 
     .kategori-card img{
-        height: 90px;
+        height: 95px;
     }
 
     .kategori-card-content{
-        padding: 9px;
+        padding: 10px;
     }
 
     .kategori-card h3{
@@ -574,6 +711,7 @@ footer{
 
     .social-container{
         grid-template-columns: repeat(3, 1fr);
+
         gap: 10px;
     }
 
@@ -593,77 +731,19 @@ footer{
         display: none;
     }
 
-    .sidebar-contact a{
-        width: 42px;
-        height: 42px;
-        font-size: 18px;
-    }
-}
-@media(max-width: 600px){
-
-    /* TENTANG KAMI HP */
-    .tentang{
-        display: block;
-        padding: 55px 18px;
-        background: #ffffff;
-    }
-
-    .tentang-text{
-        width: 100%;
-        margin-bottom: 30px;
-        text-align: center;
-    }
-
-    .tentang-text h2{
-        font-size: 30px;
-        margin-bottom: 18px;
-    }
-
-    .tentang-text p{
-        font-size: 15px;
-        line-height: 1.8;
-        text-align: justify;
-        margin-bottom: 14px;
-    }
-
-    .tentang-image{
-        width: 100%;
-    }
-
-    .slider{
-        width: 100%;
-        height: 240px;
-        border-radius: 18px;
-    }
-
-    .prev,
-    .next{
-        width: 38px;
-        height: 38px;
-        font-size: 18px;
-    }
-
-    /* SIDEBAR HP */
     .sidebar-contact{
-        right: 8px;
-        top: auto;
-        bottom: 20px;
-        transform: none;
-
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
+        right: 10px;
+        bottom: 15px;
     }
 
     .sidebar-contact a{
         width: 45px;
         height: 45px;
+
         font-size: 20px;
-        border-radius: 50%;
-        box-shadow: 0 6px 18px rgba(0,0,0,0.25);
     }
 
-    .sidebar-contact a:hover{
-        width: 45px;
+    footer{
+        font-size: 12px;
     }
 }

@@ -616,3 +616,180 @@ footer{
         font-size: 34px;
     }
 }
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+@media(max-width: 900px){
+
+    header{
+        padding: 15px 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero{
+        padding: 100px 25px;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .hero-content{
+        max-width: 100%;
+    }
+
+    .hero-content h2{
+        font-size: 42px;
+    }
+
+    .hero-button{
+        justify-content: center;
+    }
+
+    .tentang{
+        flex-direction: column;
+        padding: 70px 25px;
+    }
+
+    .kategori-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .social-container{
+        grid-template-columns: 1fr;
+    }
+
+    .maps-container iframe{
+        height: 350px;
+    }
+}
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+@media(max-width: 600px){
+
+    /* HEADER */
+    header{
+        padding: 12px 18px;
+    }
+
+    .logo-container{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .logo-container img{
+        width: 65px;
+        height: 65px;
+    }
+
+    .logo-container h1{
+        font-size: 18px;
+    }
+
+    /* NAVBAR */
+    nav ul{
+        gap: 8px;
+    }
+
+    nav ul li a{
+        padding: 8px 14px;
+        font-size: 14px;
+    }
+
+    /* HERO */
+    .hero{
+        min-height: 75vh;
+        padding: 80px 20px;
+    }
+
+    .hero-content h2{
+        font-size: 34px;
+    }
+
+    .hero-content p{
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .hero-button{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn-primary,
+    .btn-secondary{
+        width: 100%;
+        text-align: center;
+    }
+
+    /* TENTANG */
+    .tentang{
+        padding: 60px 20px;
+    }
+
+    .tentang-text h2{
+        font-size: 32px;
+    }
+
+    .tentang-text p{
+        font-size: 15px;
+    }
+
+    .slider{
+        height: 250px;
+    }
+
+    /* PRODUK */
+    .produk{
+        padding: 70px 20px;
+    }
+
+    .produk h2{
+        font-size: 32px;
+    }
+
+    .kategori-container{
+        grid-template-columns: 1fr;
+    }
+
+    .kategori-card img{
+        height: 220px;
+    }
+
+    /* INFO */
+    .info-kami{
+        padding: 70px 20px;
+    }
+
+    .info-kami h2{
+        font-size: 34px;
+    }
+
+    .maps-container iframe{
+        height: 280px;
+    }
+
+    /* SOCIAL */
+    .social-card{
+        width: 100%;
+    }
+
+    /* SIDEBAR */
+    .sidebar-contact a{
+        width: 50px;
+        height: 50px;
+        font-size: 22px;
+    }
+
+    /* FOOTER */
+    footer{
+        font-size: 13px;
+        padding: 20px;
+    }
+}

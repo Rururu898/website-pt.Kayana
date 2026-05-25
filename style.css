@@ -668,44 +668,46 @@ footer{
     }
 }
 
-/* =========================
-   RESPONSIVE HP
-========================= */
 @media(max-width: 600px){
 
-    /* HEADER */
     header{
-        padding: 12px 18px;
-    }
-
-    .logo-container{
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .logo-container img{
-        width: 65px;
-        height: 65px;
-    }
-
-    .logo-container h1{
-        font-size: 18px;
-    }
-
-    /* NAVBAR */
-    nav ul{
+        padding: 10px 12px;
+        flex-direction: row;
         gap: 8px;
     }
 
-    nav ul li a{
-        padding: 8px 14px;
-        font-size: 14px;
+    .logo-container{
+        flex-direction: row;
+        text-align: left;
+        gap: 6px;
     }
 
-    /* HERO */
+    .logo-container img{
+        width: 45px;
+        height: 45px;
+    }
+
+    .logo-container h1{
+        font-size: 12px;
+        max-width: 120px;
+    }
+
+    nav ul{
+        gap: 4px;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+    }
+
+    nav ul li a{
+        padding: 6px 8px;
+        font-size: 11px;
+    }
+
     .hero{
-        min-height: 75vh;
-        padding: 80px 20px;
+        min-height: 70vh;
+        padding: 70px 18px;
+        text-align: left;
+        justify-content: flex-start;
     }
 
     .hero-content h2{
@@ -714,82 +716,101 @@ footer{
 
     .hero-content p{
         font-size: 15px;
-        line-height: 1.7;
     }
 
     .hero-button{
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        justify-content: flex-start;
     }
 
     .btn-primary,
     .btn-secondary{
-        width: 100%;
-        text-align: center;
+        width: auto;
+        padding: 11px 18px;
+        font-size: 13px;
     }
 
-    /* TENTANG */
     .tentang{
-        padding: 60px 20px;
+        flex-direction: row;
+        gap: 18px;
+        padding: 50px 15px;
     }
 
     .tentang-text h2{
-        font-size: 32px;
+        font-size: 26px;
     }
 
     .tentang-text p{
-        font-size: 15px;
+        font-size: 12px;
+        line-height: 1.5;
     }
 
     .slider{
-        height: 250px;
-    }
-
-    /* PRODUK */
-    .produk{
-        padding: 70px 20px;
-    }
-
-    .produk h2{
-        font-size: 32px;
-    }
-
-    .kategori-container{
-        grid-template-columns: 1fr;
-    }
-
-    .kategori-card img{
         height: 220px;
     }
 
-    /* INFO */
-    .info-kami{
-        padding: 70px 20px;
+    .produk{
+        padding: 60px 15px;
     }
 
-    .info-kami h2{
-        font-size: 34px;
+    .kategori-container{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px;
+    }
+
+    .kategori-card img{
+        height: 150px;
+    }
+
+    .kategori-card-content{
+        padding: 14px;
+    }
+
+    .kategori-card h3{
+        font-size: 17px;
+    }
+
+    .kategori-card p{
+        font-size: 12px;
+    }
+
+    .kategori-card span{
+        padding: 8px 14px;
+        font-size: 12px;
+    }
+
+    .info-kami{
+        padding: 60px 15px;
     }
 
     .maps-container iframe{
-        height: 280px;
+        height: 300px;
     }
 
-    /* SOCIAL */
+    .social-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
+    }
+
     .social-card{
-        width: 100%;
+        padding: 22px 10px;
     }
 
-    /* SIDEBAR */
+    .social-card i{
+        font-size: 32px;
+    }
+
+    .social-card h3{
+        font-size: 15px;
+    }
+
+    .social-card p{
+        font-size: 11px;
+    }
+
     .sidebar-contact a{
-        width: 50px;
-        height: 50px;
-        font-size: 22px;
-    }
-
-    /* FOOTER */
-    footer{
-        font-size: 13px;
-        padding: 20px;
+        width: 45px;
+        height: 45px;
+        font-size: 20px;
     }
 }

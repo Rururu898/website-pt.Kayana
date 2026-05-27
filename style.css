@@ -529,68 +529,91 @@ footer{
 @media(max-width: 600px){
 
     header{
-        padding: 12px 15px;
+        padding: 10px 15px;
         flex-direction: column;
-        gap: 10px;
+        gap: 12px;
     }
 
     .logo-container{
-        justify-content: center;
+        flex-direction: column;
         text-align: center;
+        gap: 5px;
     }
 
     .logo-container img{
-        width: 55px;
-        height: 55px;
+        width: 60px;
+        height: 60px;
     }
 
     .logo-container h1{
         font-size: 16px;
+        line-height: 1.3;
+    }
+
+    nav{
+        width: 100%;
     }
 
     nav ul{
+        width: 100%;
+        display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 6px;
+        gap: 8px;
     }
 
     nav ul li a{
         font-size: 12px;
-        padding: 7px 12px;
+        padding: 8px 12px;
     }
 
+    /* HERO */
     .hero{
-        min-height: 70vh;
-        padding: 80px 20px;
+        min-height: 75vh;
+        padding: 100px 20px 70px;
         text-align: center;
         justify-content: center;
     }
 
+    .hero-content{
+        max-width: 100%;
+    }
+
+    .hero-badge{
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
     .hero-content h2{
-        font-size: 36px;
+        font-size: 34px;
+        margin-bottom: 15px;
     }
 
     .hero-content p{
-        font-size: 15px;
+        font-size: 14px;
+        line-height: 1.7;
+        margin-bottom: 25px;
     }
 
     .hero-button{
         justify-content: center;
+        gap: 10px;
     }
 
     .btn-primary,
     .btn-secondary{
-        padding: 12px 18px;
         font-size: 13px;
+        padding: 12px 18px;
     }
 
+    /* TENTANG */
     .tentang{
-        display: block;
+        flex-direction: column;
         padding: 60px 20px;
+        gap: 30px;
     }
 
     .tentang-text{
-        margin-bottom: 30px;
         text-align: center;
     }
 
@@ -605,27 +628,49 @@ footer{
 
     .slider{
         height: 240px;
+        border-radius: 18px;
     }
 
+    .prev,
+    .next{
+        width: 38px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    /* PRODUK */
     .produk{
         padding: 60px 15px;
     }
 
+    .produk h2{
+        font-size: 30px;
+    }
+
+    .produk-subtitle{
+        font-size: 14px;
+    }
+
     .kategori-container{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .kategori-card{
+        border-radius: 18px;
     }
 
     .kategori-card img{
-        height: 95px;
+        height: 120px;
     }
 
     .kategori-card-content{
-        padding: 10px;
+        padding: 12px;
     }
 
     .kategori-card h3{
-        font-size: 12px;
+        font-size: 14px;
+        margin-bottom: 6px;
     }
 
     .kategori-card p{
@@ -633,68 +678,96 @@ footer{
     }
 
     .kategori-card span{
-        font-size: 10px;
-        padding: 6px 8px;
+        font-size: 11px;
+        padding: 7px 10px;
     }
 
+    /* INFO */
     .info-kami{
         padding: 60px 15px;
     }
 
+    .info-kami h2{
+        font-size: 30px;
+    }
+
+    .maps-container{
+        padding: 8px;
+        border-radius: 20px;
+    }
+
     .maps-container iframe{
-        height: 280px;
+        height: 250px;
+        border-radius: 14px;
     }
 
     .social-container{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 10px;
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 
     .social-card{
-        padding: 18px 8px;
+        padding: 25px 15px;
     }
 
     .social-card i{
-        font-size: 28px;
+        font-size: 35px;
     }
 
     .social-card h3{
-        font-size: 13px;
+        font-size: 18px;
     }
 
     .social-card p{
-        display: none;
+        display: block;
+        font-size: 13px;
     }
 
+    /* SIDEBAR */
     .sidebar-contact{
         right: 10px;
         bottom: 15px;
     }
 
     .sidebar-contact a{
-        width: 45px;
-        height: 45px;
+        width: 48px;
+        height: 48px;
         font-size: 20px;
     }
 
+    /* HALAMAN PRODUK */
     .produk-page-header{
         padding: 70px 20px;
     }
 
     .produk-page-header h1{
-        font-size: 34px;
+        font-size: 30px;
     }
 
     .produk-page-header p{
-        font-size: 15px;
+        font-size: 14px;
     }
 
     .produk-list{
         grid-template-columns: 1fr;
         padding: 50px 15px;
+        gap: 20px;
+    }
+
+    .produk-detail-card img{
+        height: 220px;
+    }
+
+    .produk-detail-content h3{
+        font-size: 20px;
+    }
+
+    .produk-detail-content p{
+        font-size: 14px;
     }
 
     footer{
         font-size: 12px;
+        padding: 20px 10px;
     }
 }
